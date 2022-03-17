@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_unit_options">
+        <item>@string/unit_unknown</item>
+        <item>@string/unit_kg</item>
+        <item>@string/unit_g</item>
+    </string-array>
+
+    <string-array name="array_index_location">
+        <item>@string/GDC01A</item>
+        <item>@string/GDC01A</item>
+        <item>@string/GDC01B</item>
+        <item>@string/GDC01C</item>
+        <item>@string/GDC02A</item>
+        <item>@string/GDC02B</item>
+        <item>@string/GDC02C</item>
+        <item>@string/GDC03A</item>
+        <item>@string/GDC03B</item>
+        <item>@string/GDC03C</item>
+        <item>@string/GDC04A</item>
+        <item>@string/GDC04B</item>
+        <item>@string/GDC04C</item>
+        <item>@string/GDC05A</item>
+        <item>@string/GDC05B</item>
+        <item>@string/GDC05C</item>
+    </string-array>
+
+    <string-array name="shift_index">
+        <item>@string/shift</item>
+        <item>@string/shift1</item>
+        <item>@string/shift2</item>
+        <item>@string/shift3</item>
+    </string-array>
+</resources>

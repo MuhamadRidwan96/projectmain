@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_Background"
+    android:orientation="vertical"
+	android:padding="10dp"
+    tools:context=".activity.AddMenu">
+
+	    <ImageView
+	        android:layout_width="412dp"
+	        android:layout_height="100dp"
+	        android:layout_gravity="center"
+	        android:layout_marginBottom="20dp"
+	        android:src="@drawable/dp"
+	 		android:contentDescription="@string/no_doc" />
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_gravity="center"
+		android:fontFamily="sans-serif"
+		android:textColor="#000"
+		android:text="@string/transaksi_material"
+		android:textSize="24sp" />
+
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:background="@drawable/border"
+		android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_doc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:hint="@string/mm"
+                android:inputType="number"
+                android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_materials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:hint="@string/material"
+			android:textStyle="bold"
+			android:layout_marginTop="10dp"
+			android:layout_marginStart="10dp"
+			android:layout_marginBottom="15dp"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="399dp"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+						android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:contentDescription="@string/image"
+                        android:src="@drawable/ic_date" />
+
+			<EditText
+				android:id="@+id/et_date"
+				android:layout_width="191dp"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:autofillHints=""
+				android:fontFamily="sans-serif"
+				android:hint="@string/tanggal"
+				android:inputType="datetime"
+				android:textAlignment="center"
+				android:textSize="14sp" />
+
+			<EditText
+				android:id="@+id/et_shift"
+				android:layout_width="65dp"
+				android:layout_height="wrap_content"
+				android:autofillHints=""
+				android:fontFamily="sans-serif"
+				android:hint="@string/shift"
+				android:inputType="text"
+				android:textAlignment="center"
+				android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinners"
+                android:layout_width="50dp"
+				android:layout_marginStart="15dp"
+                android:layout_height="match_parent"
+                android:gravity="bottom" />
+        </LinearLayout>
+
+		<LinearLayout
+			android:layout_width="399dp"
+			android:layout_height="50dp"
+			android:layout_marginTop="10dp"
+			android:orientation="horizontal"
+			tools:ignore="UseCompoundDrawables">
+
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="10dp"
+				android:src="@drawable/ic_user"
+				android:contentDescription="@string/user" />
+
+			<TextView
+				android:id="@+id/tv_user"
+				android:layout_width="262dp"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="15dp"
+				android:fontFamily="sans-serif"
+				android:hint="@string/user"
+				android:textColor="@color/color3"
+				android:textSize="14sp" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="399dp"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/tv_qty"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_marginStart="10dp"
+				android:fontFamily="sans-serif"
+				android:text="@string/qty"
+				android:textSize="30sp" />
+
+			<TextView
+				android:id="@+id/tv"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:visibility="invisible" />
+
+				<com.google.android.material.textfield.TextInputLayout
+					android:id="@+id/txtqtys"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginStart="10dp"
+					android:gravity="center"
+					app:errorEnabled="true"
+					app:hintTextColor="@color/text_color">
+
+					<EditText
+						android:id="@+id/et_quantity"
+						android:layout_width="140dp"
+						android:layout_height="wrap_content"
+						android:autofillHints=""
+						android:fontFamily="sans-serif"
+						android:hint="@string/qty"
+						android:inputType="number"
+						android:textSize="26sp" />
+				</com.google.android.material.textfield.TextInputLayout>
+
+				<TextView
+					android:id="@+id/tv_uom"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginStart="5dp"
+					android:text="@string/uom"
+					android:textSize="14sp"/>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="399dp"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<LinearLayout
+				android:layout_width="399dp"
+				android:layout_height="78dp"
+				android:layout_marginTop="10dp"
+				android:gravity="center"
+				android:orientation="horizontal"
+				tools:ignore="UselessParent">
+
+				<ImageView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:contentDescription="@string/location"
+					android:src="@drawable/ic_location" />
+
+				<TextView
+					android:id="@+id/tv_idStocks"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginStart="15dp"
+					android:fontFamily="sans-serif-light"
+					android:text="@string/please_scan_barcode"
+					android:textSize="14sp"
+					android:textStyle="normal" />
+
+				<TextView
+					android:id="@+id/tv_idS"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:layout_marginStart="15dp"
+					android:fontFamily="sans-serif-light"
+					android:text="@string/please_scan_barcode"
+					android:textSize="14sp"
+					android:textStyle="normal"
+					android:visibility="gone" />
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+    </LinearLayout>
+
+<Button
+    android:id="@+id/btn_edit"
+    android:layout_width="350dp"
+    android:layout_height="50dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="50dp"
+    android:fontFamily="sans-serif"
+    android:text="@string/consume"
+	android:textStyle="bold"
+	android:background="@drawable/button"
+    android:textColor="#fff"
+    android:textSize="18sp" />
+
+	 <Button
+	     android:id="@+id/btn_edit2"
+	     android:layout_width="350dp"
+	     android:layout_height="50dp"
+	     android:layout_gravity="center"
+	     android:layout_marginTop="2dp"
+	     android:fontFamily="sans-serif"
+	     android:text="@string/migo"
+	 	android:background="@drawable/button"
+	     android:textColor="#fff"
+	 	android:textStyle="bold"
+	     android:textSize="18sp" />
+
+</LinearLayout>

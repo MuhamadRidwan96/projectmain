@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.SplashLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ic_dnp_background"
+		tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="900dp"
+            tools:ignore="UselessParent">
+
+            <ImageView
+                android:id="@+id/bgapp"
+                android:layout_width="600dp"
+                android:layout_height="900dp"
+                android:contentDescription="@string/image"
+                android:scaleType="fitXY"
+                android:src="@drawable/background1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+			<ImageView
+				android:id="@+id/logo"
+				android:layout_width="match_parent"
+				android:layout_height="125dp"
+				android:contentDescription="@string/image"
+				android:elevation="6dp"
+				android:padding="15dp"
+				android:src="@drawable/dnp"
+				app:layout_constraintEnd_toEndOf="parent"
+				app:layout_constraintStart_toStartOf="parent"
+				app:layout_constraintTop_toTopOf="parent"
+				tools:ignore="MissingConstraints" />
+
+			<LinearLayout
+				android:id="@+id/textsplash"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_below="@+id/logo"
+				android:elevation="6dp"
+				android:orientation="vertical">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center"
+					android:fontFamily="sans-serif-condensed"
+					android:text="@string/welcome"
+					android:textColor="#fff"
+					android:textSize="36sp" />
+			</LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/uinterface"
+                android:layout_width="match_parent"
+                android:layout_height="750dp"
+                android:layout_below="@+id/textsplash"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:elevation="50dp"
+                    app:cardCornerRadius="25dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@color/light_Background"
+                        android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="400dp"
+                                android:layout_height="65dp"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:layout_marginTop="150dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginEnd="5dp"
+                                    android:contentDescription="@string/image"
+                                    android:src="@drawable/ic_user" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="3dp"
+                                    app:errorEnabled="true">
+
+                                    <com.google.android.material.textfield.TextInputEditText
+                                        android:id="@+id/txtUser"
+                                        android:layout_width="275dp"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="sans-serif-condensed"
+                                        android:hint="@string/nik"
+										android:layout_gravity="center"
+                                        android:selectAllOnFocus="false"
+                                        android:inputType="text"
+
+                                        android:textColor="#000"
+                                        android:textSize="14sp"
+                                        tools:ignore="TooDeepLayout" />
+                                </com.google.android.material.textfield.TextInputLayout>
+							</LinearLayout>
+
+                            <LinearLayout
+								android:layout_width="400dp"
+								android:layout_height="65dp"
+								android:layout_gravity="center"
+								android:gravity="center"
+								android:layout_marginTop="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginStart="15dp"
+									android:layout_marginEnd="5dp"
+                                    android:contentDescription="@string/image"
+                                    android:src="@drawable/ic_lock_24" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+
+                                    android:layout_width="300dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginStart="3dp"
+                                    app:errorEnabled="true"
+                                    app:passwordToggleEnabled="true">
+
+									<com.google.android.material.textfield.TextInputEditText
+										android:id="@+id/txtPass"
+										android:layout_width="275dp"
+										android:layout_height="43dp"
+										android:layout_gravity="center"
+										android:fontFamily="sans-serif-condensed"
+										android:hint="@string/password"
+										android:inputType="textPassword"
+										android:selectAllOnFocus="false"
+										android:textColor="#000"
+										android:textSize="14sp"
+										tools:ignore="TooDeepLayout" />
+                                </com.google.android.material.textfield.TextInputLayout>
+                            </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btn_login"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:clickable="true"
+                            android:focusable="true"
+							android:background="@drawable/button"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="@string/login"
+                            android:textColor="#fff"
+                            android:textSize="18sp" />
+
+						<LinearLayout
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:layout_marginTop="15dp"
+							android:gravity="center"
+							android:orientation="horizontal">
+
+							<TextView
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:layout_marginEnd="5dp"
+								android:fontFamily="sans-serif-light"
+								android:text="@string/have_an_account_yet"
+								android:textSize="15sp" />
+
+							<TextView
+								android:id="@+id/tv_reg"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:layout_gravity="center"
+								android:fontFamily="sans-serif-medium"
+								android:text="@string/register"
+								android:textColor="#E91E63"
+								android:textSize="16sp" />
+						</LinearLayout>
+
+					</LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

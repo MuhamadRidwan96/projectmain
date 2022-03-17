@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tool:showIn="nav_view">
+
+
+    <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/item_material_in"
+                android:icon="@drawable/ic_assignment"
+                android:title="Material Masuk"/>
+            <item
+                android:id="@+id/item_material_out"
+                android:icon="@drawable/ic_assignment_return"
+                android:title="Material Terpakai"/>
+            <item
+                android:id="@+id/generate_location"
+                android:icon="@drawable/ic_scanner"
+                android:title="Generate Location"/>
+
+
+    </group>
+    <item android:title="About">
+        <menu>
+            <item android:title="Logout"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+        </menu>
+
+    </item>
+
+
+
+
+</menu>

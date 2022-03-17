@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+package="com.example.projectmain">
+
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.CAMERA" />
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_dnp"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_dnp"
+    android:supportsRtl="true"
+    android:usesCleartextTraffic="true"
+    android:theme="@style/AppTheme"
+    tools:targetApi="o">
+    <activity android:name=".activity.ScanActivity"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="Instantiatable" />
+    <activity android:name=".activity.MaterialTerpakai" />
+    <activity android:name=".activity.MaterialMasuk" />
+
+    <activity
+        android:name=".activity.otp.SendOtpActivity"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activity.otp.VerifyOtp"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".login.Register"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity android:name=".activity.GenerateQR" />
+    <activity
+        android:name=".activity.detail.DetailTransactionOut"
+        android:windowSoftInputMode="adjustResize"/>
+    <activity
+        android:name=".activity.detail.DetailTransactionIn"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".login.SplashLogin"
+        android:theme="@style/AppTheme.NoActionBar" />
+    <activity
+        android:name=".activity.AddMenu"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="adjustResize" />
+    <activity
+        android:name=".activity.MainActivity"
+        android:theme="@style/AppTheme.NoActionBar"
+        android:windowSoftInputMode="adjustResize"
+		android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
+
+</manifest>

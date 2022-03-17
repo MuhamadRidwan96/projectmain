@@ -1,0 +1,38 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projectmain.activity.MainActivity">
+
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        android:title="Search"
+        android:icon="@drawable/ic_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"
+        android:theme="@android:style/Theme.Holo.Light"/>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"/>
+        <item
+            android:id="@+id/add_data"
+            android:icon="@drawable/ic_add"
+            android:title="Add Material"/>
+        <item
+            android:id="@+id/generate_location"
+            android:icon="@drawable/ic_update"
+            android:title="Generate Location"/>
+    </group>
+    <item android:title="About">
+        <menu>
+            <item android:title="Logout"
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_baseline_exit_to_app_24"/>
+        </menu>
+
+    </item>
+</menu>

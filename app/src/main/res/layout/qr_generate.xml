@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_Background"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_shapeType="basin">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/img_qr"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:contentDescription="@string/scan" />
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        app:cardBackgroundColor="@color/cardview_shadow_start_color"
+        style="@style/Widget.Neumorph.CardView"
+        app:neumorph_shapeType="pressed">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_insert"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:autofillHints="@string/location"
+                android:elevation="15dp"
+                android:hint="@string/insert_some_value"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/text_color" />
+
+            <Spinner
+                android:id="@+id/spiner3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/btn_generate"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/generate"
+        android:textColor="@color/text_color"
+        android:textSize="18sp"
+        app:neumorph_shapeType="flat" />
+
+
+</LinearLayout>

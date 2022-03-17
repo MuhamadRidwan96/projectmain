@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/light_Background"
+    tools:context=".activity.otp.SendOtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/light_Background">
+
+
+        <soup.neumorphism.NeumorphImageView
+            style="@style/Widget.Neumorph.ImageView"
+            android:layout_width="219dp"
+            android:layout_height="262dp"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="@string/image"
+            android:src="@drawable/send"
+            app:neumorph_shapeType="flat" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/otp_"
+            android:textSize="18sp"
+            android:textColor="@color/text_color"
+            android:fontFamily="sans-serif-condensed-medium"/>
+
+        <TextView
+            android:layout_width="379dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:hint="@string/send"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-light"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <soup.neumorphism.NeumorphTextView
+            style="@style/Widget.Neumorph.TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/_62"
+            android:textColor="@color/text_color"
+            android:textSize="18sp"
+            android:layout_gravity="center"/>
+
+
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
+            android:layout_width="254dp"
+            android:layout_height="70dp"
+            android:layout_marginEnd="15dp"
+            app:neumorph_shapeType="pressed">
+
+            <EditText
+                android:id="@+id/et_send_otp"
+                android:layout_width="188dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:autofillHints="@string/_81356810153"
+                android:fontFamily="sans-serif-light"
+                android:hint="@string/_81356810153"
+                android:imeOptions="actionDone"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:textColor="@color/text_color"
+                android:textSize="18sp" />
+        </soup.neumorphism.NeumorphCardView>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:background="@color/text_color" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_Background"
+        android:layout_marginTop="30dp">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone"/>
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/btn_send_otp"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="253dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="@string/send_otp"
+            android:textColor="@color/color1"
+            android:textSize="18sp"
+            app:neumorph_shapeType="flat" />
+
+    </FrameLayout>
+
+</LinearLayout>
